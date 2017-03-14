@@ -1,6 +1,6 @@
 # Installing and setting up `macOS Sierra (10.12)` on AMD-based PCs
 ###### Written by IncognitoJam (In progress)
-###### You can find the latest version of this tutorial [here](https://github.com/IncognitoJam/AMD-OSX-Tutorials/blob/master/SIERRA%2010.12/SIERRA%2010.12%20TUTORIAL.md). Although I am sorry if mistakes were made in this tutorial, I cannot be blamed for any lasting impact it has on your computer. You have been warned.
+###### You can find the latest version of this tutorial [here](https://github.com/IncognitoJam/AMD-OSX-Tutorials/tree/master/Sierra_10.12). Although I am sorry if mistakes were made in this tutorial, I cannot be blamed for any lasting impact it has on your computer. You have been warned.
 
 This is a brief tutorial to help people get started running macOS Sierra. It will show you how to create a USB installer for Sierra and use this to install Sierra to a drive on your computer. 
 
