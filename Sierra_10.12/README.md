@@ -25,7 +25,7 @@ GPU: MSI GeForce GTX 950 2GB
 I would also recommend that you either print this document, or have a smartphone or another computer at hand to read this whilst you install Sierra.
 
 ### Downloads
-- Thank you to Shaneee for his extremely useful Sierra image, although it isn't perfect! 😜  I have modified his veyr useful installer image to include the correct kexts for USB to help prevent errors, and I have also provided a Post Install script to automate the second part of the installation process. Please follow this [link]() to download the torrent I have created to share this installer image. The file should be named `IncognitoSierraAMD.dmg`. 
+- Thank you to Shaneee for his extremely useful Sierra image, although it isn't perfect! 😜  I have modified his veyr useful installer image to include the correct kexts for USB to help prevent errors, and I have also provided a Post Install script to automate the second part of the installation process. Please follow this [link](https://github.com/IncognitoJam/AMD-OSX-Tutorials/tree/master/Sierra_10.12/DOWNLOADS) to download the torrent I have created to share this installer image. The file should be named `IncognitoSierraAMD.dmg`. 
 - If you are using Windows you must also download and install [TransMac](http://www.acutesystems.com/tmac/tmsetup.exe) as we wil use this to format and restore your USB with the Sierra image.
 
 ## 1. Creating the Installer
