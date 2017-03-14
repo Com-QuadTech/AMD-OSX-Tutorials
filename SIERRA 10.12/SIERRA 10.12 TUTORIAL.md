@@ -102,10 +102,10 @@ I have provided the latest installer package for Clover (at the time of writing)
 1. Firstly open Finder and navigate to your `IncognitoSierraAMD` drive and open the `PostInstall` directory. 
 2. Drag and copy the `DRAG TO DESKTOP` files.. to your desktop.
 3. Open the directory and then open the `CLOVER Files` directory.
-3. Whilst holding your `CTRL` key, Left-click the `Clover_v2.4k_r4035.pkg` file and then click open on both prompts to begin the Clover install process. **Do not** open Clover Configurator.
-4. 
+3. Whilst holding your `CTRL` key, Left-click the `Clover_v2.4k_r4035.pkg` file and then click open on both prompts to begin the Clover install process. **Do not** open Clover Configurator yet.
+4. *To be completed*
 
 ### Installing NVIDIA Web Drivers
 I have provided the latest NVIDIA drivers for macOS Sierra 10.12 on the installation media you created in the `/PostInstall/` directory. You will use this package to install the correct graphics drivers. These drivers will work on GTX 9xx series cards. GTX 10xx cards are currently not supported as Apple has not yet allowed NVIDIA to release their drivers for macOS.
 
-1. *TBC*
+1. *To be completed*
