@@ -8,9 +8,11 @@ In future I will expand this tutorial to also show how to install various other 
 
 #### Prologue:
 Your computer specifications play a large role in how likely it is you will be able to install Sierra. I was very lucky with the parts I have and it made installing Sierra that it was for others. You can view my computer parts [here](https://uk.pcpartpicker.com/user/Jamboozlez/saved/HpDK8d). In brief:
-- CPU: AMD FX-6300
-- MOBO: ASRock 980DE3/U3S3 AM3+
-- GPU: MSI GeForce GTX 950 2GB
+```
+CPU: AMD FX-6300
+MOBO: ASRock 980DE3/U3S3 AM3+
+GPU: MSI GeForce GTX 950 2GB
+```
 
 
 ### Requirements
