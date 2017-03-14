@@ -1,4 +1,7 @@
-# Installing and setting up `macOS Sierra (10.12)` on AMD-based Windows PCs
+# Installing and setting up `macOS Sierra (10.12)` on AMD-based PCs
+###### Written by IncognitoJam (In progress)
+###### You can find the latest version of this tutorial [here](https://github.com/IncognitoJam/AMD-OSX-Tutorials).
+
 This is a brief tutorial to help people get started running macOS Sierra. It will show you how to create a USB installer for Sierra and use this to install Sierra to a drive on your computer. 
 
 In future I will expand this tutorial to also show how to install various other things such as NVIDIA GeForce web drivers, audio drivers and ethernet drivers. I will also add a section to show how to install Clover to your USB or hard drive.
@@ -11,7 +14,7 @@ Your computer specifications play a large role in how likely it is you will be a
 
 
 ### Requirements
-1. You are running Windows on an AMD based PC.
+1. You are running Windows (or macOS, see Part 1) on an AMD based PC.
 2. You have an empty USB which is at least `12GB` in size.
 3. You have another hard drive within your computer which you can install macOS to. I will not show you how to install macOS to the same drive (on a different partition) and I would not recommend overwriting Windows as you may have to go back to it if you ruin your USB installer.
 3. You have necessary backups of important files - don't make the same mistake as me. Don't store these backups on your computer - upload them to Google Drive or Dropbox.
@@ -20,15 +23,17 @@ Your computer specifications play a large role in how likely it is you will be a
 I would also recommend that you either print this document, or have a smartphone or another computer at hand to read this whilst you install Sierra.
 
 ### Downloads
-- Thank you to Shaneee for his extremely useful Sierra image, although it isn't perfect! 😜 Please follow [this]() link to download the disk image you will be using to create the USB installer. It is based off of Shaneee's SierraAMD for Windows image which can be found [here](http://forum.amd-osx.com/viewtopic.php?f=23&t=941&sid=33d0fae80da0fd71b2f3bd63c1505fac).
-- You must also download and install [TransMac](http://www.acutesystems.com/tmac/tmsetup.exe) as we wil use this to format and restore your USB with the Sierra image.
+- Thank you to Shaneee for his extremely useful Sierra image, although it isn't perfect! 😜  I have modified his veyr useful installer image to include the correct kexts for USB to help prevent errors, and I have also provided a Post Install script to automate the second part of the installation process. Please follow this [link]() to download the torrent I have created to share this installer image. The file should be named `IncognitoSierraAMD.dmg`. 
+- If you are using Windows you must also download and install [TransMac](http://www.acutesystems.com/tmac/tmsetup.exe) as we wil use this to format and restore your USB with the Sierra image.
 
 ## 1. Creating the Installer
 
-1) Extract the `SierraAMD_V2.7z` file you have downloaded to find the `SierraInstallerAMD.dmg` files.
-2) Open **TransMac** by right-clicking on it in the start menu and selecting **Run as administrator**. This will allow you to restore the USB with the `.dmg` file you have extracted.
-3) You should be able to see your USB in the left pane. Right-click on your USB and select `Restore with image` (or similar) and then select the image you just extracted. This will begin the image restore process which may typically takes around 30 minutes.
-4) Once this completes, you are finished in Windows! You can shut down your computer.
+If you are using a Mac to create the installer, you can use Disk Utility to restore the image to your USB and then proceed with the installation from Part 2.
+
+**On Windows:**
+1) Open **TransMac** by right-clicking on it in the start menu and selecting **Run as administrator**. This will allow you to restore the USB with the `.dmg` file you have downloaded.
+2) You should be able to see your USB in the left pane. Right-click on your USB and select `Restore with image` (or similar) and then select the image you just downloaded. This will begin the image restore process which may typically takes around 30 minutes.
+3) Once this completes, you are finished in Windows! You can shut down your computer.
 
 ## 2. Preparing your BIOS
 Turn on your computer again but you will need to boot into your BIOS. On my ASRock motherboard I do this by pressing either `F2` or `Del` however this will vary by manufactuer. You can either Google search the key for your motherboard, or it may be shown on your monitor during the boot process. Press or hold down the key whilst your computer is booting.
@@ -40,7 +45,7 @@ Turn on your computer again but you will need to boot into your BIOS. On my ASRo
 
 ## 3.1 Installing macOS Sierra: Formatting Disk and Installing OS
 1. Start up your computer and boot from the USB (it should do this automatically if it is still plugged in and you changed your `Boot Order`).
-2. After a minute your computer should reach a screen which shows a list of disk volumes, including one labelled `Sierra AMD` (or similar). Using your arrow keys highlight this volume and simply press enter. You may have noticed that the bootloader allowed boot arguments to be entered, but these should not be required at this stage of the installation*.
+2. After a minute your computer should reach a screen which shows a list of disk volumes, including one labelled `IncognitoSierraAMD` (or similar). Using your arrow keys highlight this volume and simply press enter. You may have noticed that the bootloader allowed boot arguments to be entered, but these should not be required at this stage of the installation*.
 3. You have now loading the macOS Sierra installer! Select your language and click continue.
 4. Don't click continue again, but instead press `CTRL + F2` to highlight the options bar at the top of your screen and use the arrow keys to navigate to `Utilities -> Disk Utility` and press enter to open the Disk Utility.
 5. Once Disk Utility has opened, press the up arrow key to highlight drives in the left pane and select the hard drive you wish to install macOS to. Select `Erase` at the top of the window and choose the following options:
@@ -52,11 +57,11 @@ Turn on your computer again but you will need to boot into your BIOS. On my ASRo
 8. Allow the installation to finish and do not remove the USB as it will be used in the second part of the installation.
 
 ## 3.2 Installing macOS Sierra: Post Install Process
-1. Now that the install has finished your computer should have rebooted and you should be back to the boot menu once again (as in step 2 of part 1). Boot to the one labelled `Sierra AMD` again by selecting it with the arrow keys and pressing enter.
+1. Now that the install has finished your computer should have rebooted and you should be back to the boot menu once again (as in step 2 of part 1). Boot to the one labelled `IncognitoSierraAMD` again by selecting it with the arrow keys and pressing enter.
 2. Press continue and then `CTRL + F2` just as before but this time navigate to `Utilities -> Terminal` and press enter.
 3. In the terminal type the following commands:
 ```
-    cd /Volumes/SierraAMD/PostInstall
+    cd /Volumes/IncognitoSierraAMD/PostInstall
     sudo sh install.sh
 ```
 This will begin the automated installation process to apply the required kexts (that is, kernel extensions) for your system to function correctly running macOS.
@@ -92,9 +97,10 @@ For now I will only show how to install the **Clover** bootloader as this is the
 
 I have provided the latest installer package for Clover (at the time of writing) as well as the `Clover Configurator` app in the `/PostInstall/` directory of the installation media you create. Below I will explain how to install Clover as well as how to use the configurator app to change boot arguments among other things.
 
-1. Firstly open Finder and navigate to your `SierraAMD` drive and open the `PostInstall` directory. 
-2. Inside you will find a few different files, but we will be using the `Clover_v2.4k_r4035.pkg` file and `Clover Configurator` app. Drag and copy these files to your desktop.
-3. Whilst holding your `CTRL` key, Left-click the `Clover_v2.4k_r4035.pkg` file and then click open on both prompts to begin the Clover install process.
+1. Firstly open Finder and navigate to your `IncognitoSierraAMD` drive and open the `PostInstall` directory. 
+2. Drag and copy the `DRAG TO DESKTOP` files.. to your desktop.
+3. Open the directory and then open the `CLOVER Files` directory.
+3. Whilst holding your `CTRL` key, Left-click the `Clover_v2.4k_r4035.pkg` file and then click open on both prompts to begin the Clover install process. **Do not** open Clover Configurator.
 4. 
 
 ### Installing NVIDIA Web Drivers
