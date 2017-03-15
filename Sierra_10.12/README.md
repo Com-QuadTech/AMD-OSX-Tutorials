@@ -7,7 +7,7 @@ This is a brief tutorial to help people get started running macOS Sierra. It wil
 In future I will expand this tutorial to also show how to install various other things such as NVIDIA GeForce web drivers, audio drivers and ethernet drivers. I will also add a section to show how to install Clover to your USB or hard drive.
 
 #### Prologue:
-Your computer specifications play a large role in how likely it is you will be able to install Sierra. I was very lucky with the parts I have and it made installing Sierra that it was for others. You can view my computer parts [here](https://uk.pcpartpicker.com/user/Jamboozlez/saved/HpDK8d). In brief:
+Your computer specifications play a large role in how likely it is you will be able to install Sierra. I was very lucky with the parts I have and it made installing Sierra that it was for others. You can view my computer parts [here](https://uk.pcpartpicker.com/user/Jamboozlez/saved/HpDK8d), or view the important ones below:
 ```
 CPU: AMD FX-6300
 MOBO: ASRock 980DE3/U3S3 AM3+
