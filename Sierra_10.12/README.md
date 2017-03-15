@@ -7,13 +7,13 @@ This is a brief tutorial to help people get started running macOS Sierra. It wil
 In future I will expand this tutorial to also show how to install various other things such as NVIDIA GeForce web drivers, audio drivers and ethernet drivers. I will also add a section to show how to install Clover to your USB or hard drive.
 
 #### Prologue:
-Your computer specifications play a large role in how likely it is you will be able to install Sierra. I was very lucky with the parts I have and it made installing Sierra that it was for others. You can view my computer parts [here](https://uk.pcpartpicker.com/user/Jamboozlez/saved/HpDK8d). In brief:
+Your computer specifications play a large role in how likely it is you will be able to install Sierra. I was very lucky with the parts I have and it made installing Sierra that it was for others. You can view my computer parts [here](https://uk.pcpartpicker.com/user/Jamboozlez/saved/HpDK8d), or view the important ones below:
 ```
 CPU: AMD FX-6300
 MOBO: ASRock 980DE3/U3S3 AM3+
 GPU: MSI GeForce GTX 950 2GB
 ```
-
+In brief: You need SSE4.1 (Sierra requirement) on your CPU. You can check at [CPU-World](http://www.cpu-world.com/). 
 
 ### Requirements
 1. You are running Windows (or macOS, see Part 1) on an AMD based PC.
@@ -25,7 +25,7 @@ GPU: MSI GeForce GTX 950 2GB
 I would also recommend that you either print this document, or have a smartphone or another computer at hand to read this whilst you install Sierra.
 
 ### Downloads
-- Thank you to Shaneee for his extremely useful Sierra image, although it isn't perfect! 😜  I have modified his very useful installer image to include the correct kexts for USB to help prevent errors, and I have also provided a Post Install script to automate the second part of the installation process. Please follow this [link](https://github.com/IncognitoJam/AMD-OSX-Tutorials/tree/master/Sierra_10.12/DOWNLOADS) to download the torrent I have created to share this installer image. The file should be named `IncognitoSierraAMD.dmg`. 
+- Thank you to Shaneee for his extremely useful Sierra image, although it isn't perfect! 😜  I have modified his very useful installer image to include the correct kexts for USB to help prevent errors, and I have also provided a Post Install script to automate the second part of the installation process. Please follow this [link](https://github.com/IncognitoJam/AMD-OSX-Tutorials/tree/master/Sierra_10.12/DOWNLOADS) to download the installer image. The file should be named `IncognitoSierraAMD.dmg`. 
 - If you are using Windows you must also download and install [TransMac](http://www.acutesystems.com/tmac/tmsetup.exe) as we wil use this to format and restore your USB with the Sierra image.
 
 ## 1. Creating the Installer
@@ -34,7 +34,7 @@ If you are using a Mac to create the installer, you can use Disk Utility to rest
 
 **On Windows:**
 1) Open **TransMac** by right-clicking on it in the start menu and selecting **Run as administrator**. This will allow you to restore the USB with the `.dmg` file you have downloaded.
-2) You should be able to see your USB in the left pane. Right-click on your USB and select `Restore with image` (or similar) and then select the image you just downloaded. This will begin the image restore process which may typically takes around 30 minutes.
+2) You should be able to see your USB in the left pane. Right-click on your USB and select `Restore with image` (or similar) and then select the image you just downloaded. This will begin the image restore process which typically takes around 30 minutes.
 3) Once this completes, you are finished in Windows! You can shut down your computer.
 
 ## 2. Preparing your BIOS
