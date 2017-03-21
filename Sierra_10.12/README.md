@@ -2,6 +2,8 @@
 ###### Written by IncognitoJam (In progress)
 ###### You can find the latest version of this tutorial [here](https://github.com/IncognitoJam/AMD-OSX-Tutorials/tree/master/Sierra_10.12). Although I am sorry if mistakes were made in this tutorial, I cannot be blamed for any lasting impact it has on your computer. You have been warned.
 
+# Please be aware that this tutorial is no longer maintaned. Join our [AMD OS X Discord server](https://discord.gg/tcsS8h9) if you need assistance.
+
 This is a brief tutorial to help people get started running macOS Sierra. It will show you how to create a USB installer for Sierra and use this to install Sierra to a drive on your computer. 
 
 In future I will expand this tutorial to also show how to install various other things such as NVIDIA GeForce web drivers, audio drivers and ethernet drivers. I will also add a section to show how to install Clover to your USB or hard drive.
